@@ -1,0 +1,69 @@
+body {
+    background-image: url("./images/appslika.jpg");
+    box-sizing: border-box;
+    margin: 0;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    font-family: 'Mukta', sans-serif;
+  }
+
+  
+  h1{
+    text-align: center;
+    font-size: 2.5em;
+  }
+
+  p{
+    font-size: 1.5em;
+  }
+
+  .members-count{
+    border: 0;
+    padding:0;
+    font-size: 24px;
+  }
+
+  .members-list,
+  .messages {
+    border: 1px solid #361414;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    opacity: 80%;
+  }
+
+  .messages {
+    flex-shrink: 1;
+    overflow: auto;
+    border: 1px solid #361414;
+  }
+
+  .message {
+    padding: 5px 0;
+  }
+  .message .member {
+    display: inline-block;
+  }
+
+  .member {
+    padding-right: 10px;
+    position: relative;
+  }
+
+  .message-form {
+    display: flex;
+    flex-shrink: 0;
+  }
+  .message-form__input {
+    flex-grow: 1;
+    border: 2.5px solid #361414;
+    padding: 10px 15px;
+    font-size: 16px;
+    opacity: 85%;
+  }
+  .message-form__button {
+    margin: 10px;
+    border: 1px solid #361414;
+  }
